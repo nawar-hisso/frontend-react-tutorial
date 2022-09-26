@@ -1,0 +1,71 @@
+{
+  "env": ["browser", "node", "es6", "es2021", "jest"],
+  "extends": ["xo-react"],
+  "rules": {
+    "indent": "off",
+    "react/jsx-indent": "off",
+    "react/jsx-indent-props": "off",
+    "object-curly-spacing": "off",
+    "unicorn/filename-case": "off",
+    "import/extensions": "off",
+    "node/file-extension-in-import": "off",
+    "import/no-unassigned-import": "off",
+    "eslint-comments/no-unused-disable": "off",
+    "react/state-in-constructor": "off",
+    "node/prefer-global/process": "off",
+    "react/jsx-tag-spacing": "off",
+    "unicorn/no-array-for-each": "off",
+    "operator-linebreak": "off",
+    "node/prefer-global/buffer": "off",
+    "unicorn/prefer-node-protocol": "off",
+    "max-params": "off",
+    "new-cap": "off",
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "no-console": "warn",
+    "linebreak-style": ["error", "unix"],
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "import/prefer-default-export": ["off"],
+    "react/jsx-uses-react": ["off"],
+    "react/react-in-jsx-scope": ["off"],
+    "react/jsx-props-no-spreading": ["warn"],
+    "no-shadow": "off",
+    "no-use-before-define": ["off"],
+    "no-unused-vars": ["warn"],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": [
+      "off",
+      {
+        "ignore": [],
+        "customValidators": [],
+        "skipUndeclared": false
+      }
+    ],
+    "radix": ["off", "always"]
+  },
+  "overrides": [
+    {
+      "files": ["./src/**/*.test.js*"],
+      "rules": {
+        "no-undef": "off"
+      }
+    }
+  ],
+  "settings": {
+    "react": {
+      "version": "18.0.0"
+    }
+  }
+}
